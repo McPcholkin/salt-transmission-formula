@@ -1,0 +1,15 @@
+# -*- coding: utf-8 -*-
+# vim: ft=jinja
+
+{% set transmission = salt['grains.filter_by']({
+    'Debian': {
+        'packages': ['transmission', 'transmission-daemon'],
+        'service': 'transmission-daemon',
+        'config': '/etc/transmission-daemon/settings.json',
+    },
+    'RedHat': {
+        'packages': ['transmission', 'transmission-daemon'],
+        'service': 'transmission-daemon',
+        'config': '/etc/transmission-daemon/settings.json',
+    },
+}, grain='os_family', merge=salt['pillar.get']('transmission:lookup')) %}

@@ -1,0 +1,24 @@
+transmission:
+  settings:
+    alt-speed-down: 2000
+    alt-speed-enabled: true
+    alt-speed-time-begin: 480
+    alt-speed-time-enabled: true
+    alt-speed-time-end: 1380
+    blocklist-enabled: true
+    blocklist-url: "http://list.iblocklist.com/?list=fr&fileformat=p2p&archiveformat=gz"
+    download-dir: /mnt/MyUSBDisk/Downloads/Torrents
+    idle-seeding-limit: 60
+    idle-seeding-limit-enabled: true
+    incomplete-dir: /mnt/MyUSBDisk/Downloads/Torrents/.incomplete
+    incomplete-dir-enabled: true
+    ratio-limit: 5
+    ratio-limit-enabled: true
+    rpc-password: "{bc29dfa0803859d3fb865f5b407fbe3ab361537fnUkMyRNb"
+    rpc-whitelist-enabled: false
+    speed-limit-down: 10000
+    speed-limit-down-enabled: true
+    speed-limit-up: 200
+    speed-limit-up-enabled: true
+    umask: 2
+    upload-limit: 150
