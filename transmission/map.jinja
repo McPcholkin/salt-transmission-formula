@@ -17,7 +17,7 @@ that differ from what is in defaults.yaml
         'packages': ['transmission', 'transmission-daemon'],
         'service': 'transmission-daemon',
         'config': '/etc/transmission-daemon/settings.json',
-        'user'; 'debian-transmission',
+        'user': 'debian-transmission',
         'group': 'debian-transmission',
     },
 }, grain='os_family', merge=salt['pillar.get']('transmission:lookup'), default='Debian') %}
