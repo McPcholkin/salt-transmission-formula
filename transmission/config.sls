@@ -6,7 +6,7 @@ include:
 transmission_config:
   file.serialize:
     - name: {{ transmission.config }}
-    - dataset: {{ transmission.settings }}
+    - dataset: {{ transmission.settings|yaml }}
     - formatter: json
     - user: {{ transmission.user }}
     - group: {{ transmission.group }}
