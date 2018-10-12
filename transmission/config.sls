@@ -13,6 +13,6 @@ transmission_config:
     - formatter: JSON
     - require:
       - pkg: transmission_packages
-      - module: transmission_service_stop
+      - service: transmission_service
     - watch_in:
-      - module: transmission_service_start
+      - cmd: transmission_service_reload
